@@ -11195,21 +11195,6 @@
       ]
     },
     {
-      "type": 2,
-      "title": "CockroachDB",
-      "description": "CockroachDB cluster",
-      "note": "Deploys an insecure CockroachDB cluster, please refer to <a href=\"https://www.cockroachlabs.com/docs/stable/orchestrate-cockroachdb-with-docker-swarm.html\" target=\"_blank\">CockroachDB documentation</a> for production deployments.",
-      "categories": [
-        "database"
-      ],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/cockroachdb.png",
-      "repository": {
-        "url": "https://github.com/mikestraney/portainer-templates",
-        "stackfile": "stacks/cockroachdb/docker-stack.yml"
-      }
-    },
-    {
       "type": 1,
       "title": "CommandBox",
       "description": "ColdFusion (CFML) CLI",
@@ -11359,68 +11344,6 @@
           "container": "/usr/local/apache2/htdocs/"
         }
       ]
-    },
-    {
-      "categories": [
-        "Cloud",
-        "Productivity",
-        "Tools",
-        "Other",
-        "Web"
-      ],
-      "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
-      "env": [
-        {
-          "default": "invoice.my.domain",
-          "label": "URL",
-          "name": "URL"
-        },
-        {
-          "label": "APP_KEY",
-          "name": "APP_KEY"
-        },
-        {
-          "label": "TZ",
-          "name": "TZ"
-        },
-        {
-          "label": "DATABASE_PASSWORD",
-          "name": "DATABASE_PASSWORD"
-        },
-        {
-          "label": "MYSQL_ROOT_PASSWORD",
-          "name": "MYSQL_ROOT_PASSWORD"
-        },
-        {
-          "label": "PORT",
-          "name": "PORT"
-        }
-      ],
-      "logo": "https://raw.githubusercontent.com/mikestraney/portainer-templates/master/Images/invoice_ninja.png",
-      "name": "invoice_ninja",
-      "note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation <a href='https://github.com/invoiceninja/dockerfiles'>here</a>. ",
-      "platform": "linux",
-      "repository": {
-        "stackfile": "stacks/invoice-ninja/docker-stack.yml",
-        "url": "https://github.com/mikestraney/portainer-templates"
-      },
-      "title": "Invoice Ninja",
-      "type": 2
-    },
-    {
-      "type": 2,
-      "title": "IronFunctions",
-      "description": "Open-source serverless computing platform",
-      "note": "Deploys the IronFunctions API and UI.",
-      "categories": [
-        "serverless"
-      ],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ironfunctions.png",
-      "repository": {
-        "url": "https://github.com/mikestraney/portainer-templates",
-        "stackfile": "stacks/ironfunctions/docker-stack.yml"
-      }
     },
     {
       "type": 1,
@@ -11610,32 +11533,6 @@
       ]
     },
     {
-      "type": 2,
-      "title": "Microsoft OMS Agent",
-      "description": "Microsoft Operations Management Suite Linux agent.",
-      "categories": [
-        "OPS"
-      ],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
-      "repository": {
-        "url": "https://github.com/mikestraney/portainer-templates",
-        "stackfile": "stacks/microsoft-oms/docker-stack.yml"
-      },
-      "env": [
-        {
-          "name": "AZURE_WORKSPACE_ID",
-          "label": "Workspace ID",
-          "description": "Azure Workspace ID"
-        },
-        {
-          "name": "AZURE_PRIMARY_KEY",
-          "label": "Primary key",
-          "description": "Azure primary key"
-        }
-      ]
-    },
-    {
       "type": 1,
       "title": "Mongo",
       "description": "Open-source document-oriented database",
@@ -11651,33 +11548,6 @@
       "volumes": [
         {
           "container": "/data/db"
-        }
-      ]
-    },
-    {
-      "type": 2,
-      "title": "NextcloudStack",
-      "description": "Nextcloud setup with a MySQL database",
-      "note": "Deploys a Nextcloud instance connected to a MySQL database.",
-      "categories": [
-        "Cloud"
-      ],
-      "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/mikestraney/portainer-templates/master/Images/nextcloud-icon.png",
-      "repository": {
-        "url": "https://github.com/mikestraney/portainer-templates",
-        "stackfile": "stacks/nextcloud/docker-stack.yml"
-      },
-      "env": [
-        {
-          "label": "MYSQL_PASSWORD",
-          "name": "mypassword",
-          "description": "password for sql"
-        },
-        {
-          "label": "MYSQL_ROOT_PASSWORD",
-          "name": "myrpassword",
-          "description": "root password for sql"
         }
       ]
     },
@@ -11719,22 +11589,6 @@
       ]
     },
     {
-      "type": 2,
-      "title": "OpenFaaS",
-      "name": "func",
-      "description": "Serverless functions made simple",
-      "note": "Deploys the API gateway and sample functions. You can access the UI on port 8080. <b>Warning</b>: the name of the stack must be 'func'.",
-      "categories": [
-        "serverless"
-      ],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/openfaas.png",
-      "repository": {
-        "url": "https://github.com/openfaas/faas",
-        "stackfile": "docker-compose.yml"
-      }
-    },
-    {
       "type": 1,
       "title": "Plesk",
       "description": "WebOps platform and hosting control panel",
@@ -11772,21 +11626,6 @@
           "container": "/data"
         }
       ]
-    },
-    {
-      "type": 2,
-      "title": "Portainer Agent",
-      "description": "Manage all the resources in your Swarm cluster",
-      "note": "The agent will be deployed globally inside your cluster and available on port 9001.",
-      "categories": [
-        "portainer"
-      ],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/portainer.png",
-      "repository": {
-        "url": "https://github.com/mikestraney/portainer-templates",
-        "stackfile": "stacks/portainer-agent/docker-stack.yml"
-      }
     },
     {
       "type": 1,
@@ -17718,26 +17557,6 @@
       "command": "/bin/bash"
     },
     {
-      "type": 2,
-      "title": "Redis Cluster",
-      "description": "Open-source in-memory data structure store - Cluster mode",
-      "categories": [
-        "database"
-      ],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redis.png",
-      "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/redis-cluster/docker-stack.yaml"
-      },
-      "env": [
-        {
-          "name": "REDIS_PASSWD",
-          "label": "Redis password"
-        }
-      ]
-    },
-    {
       "type": 1,
       "title": "Dokku",
       "description": "Dokku setup as a container",
@@ -17953,26 +17772,6 @@
         {
           "name": "owner_api_password",
           "label": "API Password"
-        }
-      ]
-    },
-    {
-      "type": 2,
-      "title": "LiveSwitch",
-      "description": "A basic LiveSwitch stack with gateway, caching, database and media server",
-      "categories": [
-        "media"
-      ],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/liveswitch.png",
-      "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/liveswitch/docker-stack.yml"
-      },
-      "env": [
-        {
-          "name": "POSTGRES_PASSWORD",
-          "label": "Postgres password"
         }
       ]
     },
