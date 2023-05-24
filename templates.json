@@ -534,58 +534,6 @@
     },
     {
       "categories": [
-        "Wiki"
-      ],
-      "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Featuring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "1000",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
-          "default": "America/New_York",
-          "label": "TZ",
-          "name": "TZ"
-        },
-        {
-          "label": "DATABASE_PASSWORD",
-          "name": "DATABASE_PASSWORD"
-        },
-        {
-          "label": "MYSQL_ROOT_PASSWORD",
-          "name": "MYSQL_ROOT_PASSWORD"
-        },
-        {
-          "default": "http://192.168.X.Y:6875",
-          "description": "Address to access Bookstack. If using a domain, add it here. If not set correctly the app will not be accessible",
-          "label": "APP_URL",
-          "name": "APP_URL"
-        },
-        {
-          "default": "6875",
-          "label": "PORT",
-          "name": "PORT"
-        }
-      ],
-      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bookstack2.png",
-      "name": "bookstack",
-      "note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.bookstackapp.com/\" target=\"_blank\">https://www.bookstackapp.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.bookstackapp.com/docs/admin/installation/#docker\" target=\"_blank\">https://www.bookstackapp.com/docs/admin/installation/#docker</a><br><br><br>Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
-      "platform": "linux",
-      "repository": {
-        "stackfile": "stack/bookstack.yml",
-        "url": "https://github.com/pi-hosted/pi-hosted"
-      },
-      "title": "Bookstack",
-      "type": 3
-    },
-    {
-      "categories": [
         "Tools",
         "Web",
         "Webserver"
@@ -1368,63 +1316,6 @@
     },
     {
       "categories": [
-        "Other",
-        "CMD",
-        "Web",
-        "Tools"
-      ],
-      "description": "Drupal CMS.  Make sure you run the install script under tools before installing.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "1000",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
-          "default": "America/New_York",
-          "label": "TZ",
-          "name": "TZ"
-        },
-        {
-          "default": "drupal",
-          "label": "DATABASE_NAME",
-          "name": "DATABASE_NAME"
-        },
-        {
-          "default": "drupal",
-          "label": "DATABASE_USER",
-          "name": "DATABASE_USER"
-        },
-        {
-          "default": "",
-          "label": "DATABASE_PASSWORD",
-          "name": "DATABASE_PASSWORD"
-        },
-        {
-          "default": "",
-          "label": "MYSQL_ROOT_PASSWORD",
-          "name": "MYSQL_ROOT_PASSWORD"
-        }
-      ],
-      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/drupal.png",
-      "name": "drupal",
-      "platform": "linux",
-      "repository": {
-        "stackfile": "stack/drupal.yml",
-        "url": "https://github.com/pi-hosted/pi-hosted/"
-      },
-      "restart_policy": "unless-stopped",
-      "title": "Drupal",
-      "type": 3,
-      "note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.drupal.org/\" target=\"_blank\">https://www.drupal.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration\" target=\"_blank\">https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_drupal.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_drupal.sh | bash</h3><br><br>"
-    },
-    {
-      "categories": [
         "DNS",
         "Tools"
       ],
@@ -1978,55 +1869,6 @@
     },
     {
       "categories": [
-        "Other"
-      ],
-      "description": "Ghostfolio is a privacy-first, open source dashboard for your personal finances. Break down your asset allocation, know your net worth and make solid, data-driven investment decisions.",
-      "env": [
-        {
-          "default": "ghostfolio_usr",
-          "label": "POSTGRES_USER",
-          "name": "POSTGRES_USER"
-        },
-        {
-          "default": "r2sp88fzvjnj9e24maycjv6e7kukj8wurcmt",
-          "label": "POSTGRES_PASSWORD",
-          "name": "POSTGRES_PASSWORD"
-        },
-        {
-          "default": "ghostfolio_db",
-          "label": "POSTGRES_DB",
-          "name": "POSTGRES_DB"
-        },
-        {
-          "default": "",
-          "label": "ALPHA_VANTAGE_API_KEY",
-          "name": "ALPHA_VANTAGE_API_KEY"
-        },
-        {
-          "default": "4574k48a355hkcbew7h69xazz694bd32xmze",
-          "label": "ACCESS_TOKEN_SALT",
-          "name": "ACCESS_TOKEN_SALT"
-        },
-        {
-          "default": "8k8zvx2krrrh7qcsqnsn73e5bvfesupy3b75",
-          "label": "JWT_SECRET_KEY",
-          "name": "JWT_SECRET_KEY"
-        }
-      ],
-      "logo": "https://ghostfol.io/assets/apple-touch-icon.png",
-      "name": "ghostfolio",
-      "platform": "linux",
-      "repository": {
-        "stackfile": "stack/ghostfolio.yml",
-        "url": "https://github.com/pi-hosted/pi-hosted/"
-      },
-      "restart_policy": "unless-stopped",
-      "title": "Ghostfolio",
-      "type": 3,
-      "note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://ghostfol.io/\" target=\"_blank\">https://ghostfol.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ghostfolio/ghostfolio#self-hosting\" target=\"_blank\">https://github.com/ghostfolio/ghostfolio#self-hosting</a><br><br><br>"
-    },
-    {
-      "categories": [
         "Proxy"
       ],
       "description": "Simple socks5 server using go-socks5 with authentication options",
@@ -2082,27 +1924,6 @@
           "container": "/app/data"
         }
       ]
-    },
-    {
-      "categories": [
-        "Monitor",
-        "Tools"
-      ],
-      "description": "Grafana Dashboard anything. Observe everything.  Query, visualize, alert on, and understand your data no matter where it\u2019s stored. With Grafana you can create, explore, and share all of your data through beautiful, flexible dashboards.",
-      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/grafana.png",
-      "name": "grafana",
-      "platform": "linux",
-      "ports": [
-        "3030:3000/tcp"
-      ],
-      "repository": {
-        "stackfile": "stack/grafana.yml",
-        "url": "https://github.com/pi-hosted/pi-hosted"
-      },
-      "restart_policy": "unless-stopped",
-      "title": "Grafana",
-      "type": 3,
-      "note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://grafana.com/grafana/\" target=\"_blank\">https://grafana.com/grafana/</a><br><b>Official Docker Documentation: </b><a href=\"https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/\" target=\"_blank\">https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_grafana.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_grafana.sh | bash</h3><br><br>"
     },
     {
       "categories": [
@@ -2924,7 +2745,7 @@
       "note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/mkuf/klipper\" target=\"_blank\">https://hub.docker.com/r/mkuf/klipper</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/mkuf/klipper\" target=\"_blank\">https://hub.docker.com/r/mkuf/klipper</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_klipper.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_klipper.sh | bash</h3><br><br>First you will need to download a printer.conf file from https://github.com/Klipper3d/klipper/tree/master/config and copy it to ",
       "platform": "linux",
       "repository": {
-        "stackfile": "stack/klipper.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted/"
       },
       "restart_policy": "unless-stopped",
@@ -3375,7 +3196,7 @@
       "name": "lychee-mariadb",
       "platform": "linux",
       "repository": {
-        "stackfile": "stack/lychee-mariadb.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted/"
       },
       "restart_policy": "unless-stopped",
@@ -3839,7 +3660,7 @@
       "name": "monica",
       "platform": "linux",
       "repository": {
-        "stackfile": "stack/monica.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "title": "Monica",
@@ -4274,7 +4095,7 @@
         "7880:7880/tcp"
       ],
       "repository": {
-        "stackfile": "stack/nginx-proxy-manager-goaccess.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "restart_policy": "unless-stopped",
@@ -4324,7 +4145,7 @@
         "443:443/tcp"
       ],
       "repository": {
-        "stackfile": "stack/nginx-proxy-manager.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "restart_policy": "unless-stopped",
@@ -4389,7 +4210,7 @@
         "7880:7880/tcp"
       ],
       "repository": {
-        "stackfile": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "restart_policy": "unless-stopped",
@@ -4497,7 +4318,7 @@
       "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nitter.png",
       "name": "nitter",
       "repository": {
-        "stackfile": "stack/nitter.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted/"
       },
       "platform": "linux",
@@ -4532,7 +4353,7 @@
         "1880:1880/tcp"
       ],
       "repository": {
-        "stackfile": "stack/node-red.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted/"
       },
       "restart_policy": "unless-stopped",
@@ -5036,7 +4857,7 @@
       "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/paperless.png",
       "name": "paperless-ngx",
       "repository": {
-        "stackfile": "stack/paperless-ngx.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted/"
       },
       "platform": "linux",
@@ -5844,7 +5665,7 @@
         "3000:3000/tcp"
       ],
       "repository": {
-        "stackfile": "stack/raspberrypi-monitoring.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "restart_policy": "unless-stopped",
@@ -5998,7 +5819,7 @@
         "4180:3000/tcp"
       ],
       "repository": {
-        "stackfile": "stack/redmine.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "restart_policy": "unless-stopped",
@@ -7284,7 +7105,7 @@
         "8086:8086/tcp"
       ],
       "repository": {
-        "stackfile": "stack/unpoller-stack.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "restart_policy": "unless-stopped",
@@ -7430,7 +7251,7 @@
       "name": "vikunja",
       "platform": "linux",
       "repository": {
-        "stackfile": "stack/vikunja.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted/"
       },
       "restart_policy": "unless-stopped",
@@ -7611,7 +7432,7 @@
       "name": "wg-easy",
       "platform": "linux",
       "repository": {
-        "stackfile": "stack/wireguard-easy.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "title": "Wireguard Server",
@@ -7648,7 +7469,7 @@
       "note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://wordpress.com/\" target=\"_blank\">https://wordpress.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/docker-library/docs/tree/master/wordpress#-via-docker-stack-deploy-or-docker-compose\" target=\"_blank\">https://github.com/docker-library/docs/tree/master/wordpress#-via-docker-stack-deploy-or-docker-compose</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/wordpress_installation.md\" target=\"_blank\">wordpress_installation.md</a></h3><br><br><br>Deploys a Wordpress instance connected to a MySQL database.",
       "platform": "linux",
       "repository": {
-        "stackfile": "stack/wordpress-stack.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "title": "Wordpress",
@@ -7731,7 +7552,7 @@
       "note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Yooooomi/your_spotify\" target=\"_blank\">https://github.com/Yooooomi/your_spotify</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/Yooooomi/your_spotify#readme\" target=\"_blank\">https://github.com/Yooooomi/your_spotify#readme</a><br><br><br>Create a Spotify App here: https://developer.spotify.com/dashboard/applications. Don't forget adding Redirect URL: http://192.168.X.Y:3081/oauth/spotify/callback under edit settings of the dashboard.",
       "platform": "linux",
       "repository": {
-        "stackfile": "stack/your-spotify.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted"
       },
       "title": "your-spotify",
@@ -7801,7 +7622,7 @@
       "name": "yourls",
       "platform": "linux",
       "repository": {
-        "stackfile": "stack/yourls.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted/"
       },
       "restart_policy": "unless-stopped",
@@ -13544,7 +13365,7 @@
       "env": [],
       "repository": {
         "url": "https://github.com/mediadepot/templates",
-        "stackfile": "stacks/filerun/docker-compose.yml"
+
       }
     },
     {
@@ -13625,7 +13446,7 @@
       ],
       "repository": {
         "url": "https://github.com/mediadepot/templates",
-        "stackfile": "stacks/klaxon/docker-compose.yml"
+
       }
     },
     {
@@ -13725,7 +13546,7 @@
       ],
       "repository": {
         "url": "https://github.com/mediadepot/templates",
-        "stackfile": "stacks/mayan/docker-compose.yml"
+
       }
     },
     {
@@ -17711,7 +17532,7 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/intel.png",
       "repository": {
         "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/openamt/docker-compose.yml"
+
       },
       "env": [
         {
@@ -17755,7 +17576,7 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/intel.png",
       "repository": {
         "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/fdo/docker-stack.yml"
+
       },
       "env": [
         {
@@ -17779,7 +17600,7 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/tosibox.png",
       "repository": {
         "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/tosibox/docker-compose.yml"
+
       },
       "env": [
         {
@@ -18271,7 +18092,7 @@
       "note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://gitea.com/\" target=\"_blank\">https://gitea.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.gitea.io/en-us/install-with-docker/#mysql-database\" target=\"_blank\">https://docs.gitea.io/en-us/install-with-docker/#mysql-database</a><br><br><br>More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
       "platform": "linux",
       "repository": {
-        "stackfile": "stack/gitea-mariadb.yml",
+
         "url": "https://github.com/pi-hosted/pi-hosted/"
       },
       "restart_policy": "unless-stopped",
